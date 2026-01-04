@@ -1,14 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import PortfolioHero from './Components/PortfolioHero'
+import { Route, Routes } from 'react-router-dom'
+import VerificationAtOikas from './Pages/VerificationAtOikas'
+import OikasApp from './OikasPharma/OikasApp'
+import Home from './OikasPharma/pages/Home'
+import AboutUs from './OikasPharma/pages/AboutUs'
+import Services from './OikasPharma/pages/Services'
+import Products from './OikasPharma/pages/Products'
+import Contact from './OikasPharma/pages/Contact'
+import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
 
   return (
     <>
-      <PortfolioHero />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<PortfolioHero />} />
+
+        <Route path="/oikasPharma" element={<OikasApp />}>
+          <Route index element={<Home />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="services" element={<Services />} />
+          <Route path="products" element={<Products />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </>
   )
 }

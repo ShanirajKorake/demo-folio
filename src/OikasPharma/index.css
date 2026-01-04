@@ -1,18 +1,17 @@
-@import "tailwindcss";
+@theme {
+  --animate-slow-zoom: slow-zoom 20s infinite alternate;
 
-.geom{
-  font-family: "Geom", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  @keyframes slow-zoom {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.15);
+    }
+  }
 }
-
-.bbh{
-  font-family: "BBH Bartle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+@import 'tailwindcss';
 
 .c-g {
   font-family: "Cormorant Garamond", serif;
