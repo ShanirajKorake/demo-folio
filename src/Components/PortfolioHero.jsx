@@ -86,7 +86,7 @@ export default function PortfolioHero() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-zinc-950 text-white px-6 cursor-none relative overflow-hidden geom select-none">
+    <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white px-6 cursor-none overflow-hidden geom select-none z-10">
       {/* ===== Cursor elements ===== */}
       <div
         ref={dotRef}
