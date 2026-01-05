@@ -10,14 +10,14 @@ import Services from './OikasPharma/pages/Services'
 import Products from './OikasPharma/pages/Products'
 import Contact from './OikasPharma/pages/Contact'
 import ScrollToTop from './Components/ScrollToTop'
-
+import FolioHome from './Pages/FolioHome'
 function App() {
 
   return (
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<PortfolioHero />} />
+        <Route path="/" element={<FolioHome />} />
 
         <Route path="/oikasPharma" element={<OikasApp />}>
           <Route index element={<Home />} />
