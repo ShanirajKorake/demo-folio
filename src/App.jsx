@@ -11,6 +11,7 @@ import Products from './OikasPharma/pages/Products'
 import Contact from './OikasPharma/pages/Contact'
 import ScrollToTop from './Components/ScrollToTop'
 import FolioHome from './Pages/FolioHome'
+import Sunflower from './Pages/Sunflower'
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<FolioHome />} />
+        <Route path="/sunflower" element={<Sunflower />} />
 
         <Route path="/oikasPharma" element={<OikasApp />}>
           <Route index element={<Home />} />
