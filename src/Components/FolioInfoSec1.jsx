@@ -109,7 +109,6 @@ const FolioInfoSec1 = () => {
                 </div>
             </div>
         </section>
-        </section>
     )
 }
 
