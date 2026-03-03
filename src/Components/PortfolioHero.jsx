@@ -104,22 +104,12 @@ export default function PortfolioHero() {
 
       {/* ===== Hero content ===== */}
       <div className="max-w-3xl w-full relative z-10">
-        <h1 className="text-3xl md:text-7xl font-light tracking-tight mb-8 text-zinc-100 bbh select-none">
+        <h1 className="text-3xl md:text-6xl 2xl:text-7xl font-light tracking-tight mb-8 text-zinc-100 bbh select-none">
           Shaniraj Korke
         </h1>
 
-        <div className="mb-8 h-8">
-          <span
-            ref={skillRef}
-            className="text-lg md:text-3xl font-light text-zinc-400"
-          >
-            JavaScript
-          </span>
-        </div>
 
-        <p className="text-md md:text-xl text-zinc-400 font-light leading-relaxed mb-16 max-w-2xl italic">
-          "See you in a minute"
-        </p>
+ 
 
         <div className="flex flex-wrap gap-4">
           {[{ lable: "GitHub", link: "https://github.com/ShanirajKorake" }, { lable: "Instagram", link: "https://www.instagram.com/shaniraj.mkv" }, { lable: "Letterboxd", link: "https://letterboxd.com/om_16" }].map((label, i) => (

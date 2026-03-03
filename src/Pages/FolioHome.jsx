@@ -20,7 +20,7 @@ export default function FolioHome() {
                     rayLength={3}
                 />
                 <div className="absolute top-0 left-0 w-full h-screen flex flex-col-reverse md:flex-row bg-zinc-950 overflow-hidden">
-                    <div className="flex-1 flex justify-center items-center z-10 text-white relative overflow-hidden h-full">
+                    <div className="flex-3 md:flex-1 flex justify-center items-center z-10 text-white relative overflow-hidden h-full">
                         <FolioInfo />
                         <GradualBlur
                             target="parent"
@@ -33,7 +33,7 @@ export default function FolioHome() {
                             opacity={1}
                         />
                     </div>
-                    <div className="flex-1 relative h-full">
+                    <div className="flex-1 relative h-full border-b border-zinc-800">
 
                         <PortfolioHero />
                     </div>
